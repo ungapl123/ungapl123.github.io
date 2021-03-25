@@ -8,9 +8,9 @@ title.value = document.title;
 let color = 240
 renderBtn.addEventListener('click',()=>{
     let temp = '';
-    if(valInput[0].value > 50){
-        alert('Za duzo Limit A: 50')
-    }else if(valInput[0].value > 60){
+    if(valInput[0].value > 41){
+        alert('Za duzo Limit A: 41')
+    }else if(valInput[1].value > 60){
         alert('Za duzo Limit B: 60')
     }else{
     console.log(valInput[0].value*1)
@@ -23,10 +23,10 @@ renderBtn.addEventListener('click',()=>{
         temp += '<br/>'
     }
     workplace.innerHTML = temp;
-    workplace.style.left = `${(valInput[1].value+1)*2/(valInput[0].value)}px`
+    workplace.style.left = `${(valInput[1].value+1)*2/(valInput[0].value)*4}px`
     for(const e of td){
 
-        e.addEventListener('mouseover',(e)=>{
+        e.addEventListener('click',(e)=>{
             e.target.style.backgroundColor = `hsla(${color}, 100%, 50%, 1)`
             e.target.style.borderColor = `hsla(${color}, 100%, 50%, 1)`
     
