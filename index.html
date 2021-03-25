@@ -9,13 +9,28 @@
 	<title>PixelArt</title>
 </head>
 <body>
+	<i class="bi info bi-info-circle-fill"></i>
+	<div class='controls'>
+		<a>
+		<- w strone zielonego <br/> 
+		-> w strone czerwonego<br/>
+		(Q) przeskok o jeden kolor do tyłu<br/>
+		(E) przeskok o jeden kolor do przodu<br/>
+		(BackSpace) restart do Niebieskiego
+	</a>
+	
+	</div>
+	<gui>
 	<h1>PixelArts</h1>
-	<p>Tryb zmiany nazwy okna<input type='checkbox'></p>
-	<p>Dostępne kolorki</p>
+	<input />
+	<p><i class="bi bi-patch-check-fill"></i> Strzałkami wybierasz kolor <i class="bi bi-patch-check-fill"></i></p>
+	Rozimar <input name='gridVal' value=3 type="number"> na <input name='gridVal' value=3 type="number">
+	<button id='render'>Generuj</button>
 	
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
-	<script src="doc/anime.min.js"></script>
+	<div id='workplace'>
+
+	</div>
 	<script src="main.js"></script>
-	
+	</gui>
 </body>
 </html>
